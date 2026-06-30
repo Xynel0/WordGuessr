@@ -36,3 +36,9 @@ Em seguida, execute:
 ```bash
 python wordguessr.py
 ```
+
+Contribuições
+
+Encontrou um problema ou tem alguma sugestão? Fique à vontade para abrir uma Issue ou enviar um PR.
+
+🩴
