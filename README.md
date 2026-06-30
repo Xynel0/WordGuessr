@@ -7,9 +7,7 @@ WordGuess é um jogo de adivinhação de palavras inspirado no clássico jogo da
 O jogo possui cinco modos:
 
 - **Zen:** jogue sem limite de tentativas. Você pode continuar tentando até descobrir a palavra.
-- **Fácil:** a quantidade de tentativas é definida de acordo com o número de letras da palavra.
-- **Médio:** a quantidade de tentativas é definida de acordo com o número de letras da palavra.
-- **Difícil:** a quantidade de tentativas é definida de acordo com o número de letras da palavra.
+- **Fácil, Médio e Difícil:** a quantidade de tentativas é definida de acordo com o número de letras da palavra.
 - **Impossível:** você possui apenas uma única tentativa.
 
 ## Lista de palavras
@@ -36,28 +34,5 @@ Antes de executar o programa, certifique-se de que:
 Em seguida, execute:
 
 ```bash
-python main.py
+python wordguessr.py
 ```
-
-> Caso o arquivo principal possua outro nome, substitua `main.py` pelo nome correspondente.
-
-## Estrutura do projeto
-
-```text
-.
-├── main.py
-├── palavras.txt
-└── ...
-```
-
-## Possíveis melhorias
-
-- Adição de categorias de palavras.
-- Sistema de pontuação.
-- Ranking de jogadores.
-- Interface gráfica.
-- Novos modos de jogo.
-
-## Licença
-
-Este projeto foi desenvolvido para fins de estudo e aprendizado.
