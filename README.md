@@ -37,7 +37,7 @@ Em seguida, execute:
 python wordguessr.py
 ```
 
-Contribuições
+###Contribuições
 
 Encontrou um problema ou tem alguma sugestão? Fique à vontade para abrir uma Issue ou enviar um PR.
 
