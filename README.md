@@ -1,6 +1,6 @@
-# WordGuess
+# WordGuessr
 
-WordGuess é um jogo de adivinhação de palavras inspirado no clássico jogo da forca, mas com foco em diferentes níveis de dificuldade e na personalização da lista de palavras.
+WordGuessr é um jogo de adivinhação de palavras inspirado no clássico jogo da forca, mas com foco em diferentes níveis de dificuldade e na personalização da lista de palavras.
 
 ## Modos de jogo
 
