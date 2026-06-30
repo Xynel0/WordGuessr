@@ -29,7 +29,7 @@ while True:
         if b == True:
             print(f"a palavra era {palavra}! você ganhou!\nsó teve que tentar {tentativas} vezes! parabens!!")
             break
-        letra = func.v_input(f"insira uma letra(você tem {print_chances} chances):\n", chutes_certos, chutes_errados)
+        letra = func.v_input(f"insira uma letra(você tem {print_chances} chance(s)):\n", chutes_certos, chutes_errados)
         if letra in palavra:
             chutes_certos.append(letra)
         else:
