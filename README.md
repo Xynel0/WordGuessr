@@ -22,6 +22,7 @@ Ao editar o arquivo, siga as seguintes regras:
 - Não utilize caracteres especiais.
 
 Seguindo esse formato, o jogo funcionará corretamente.
+Você pode modificar o arquivo original diretamente, ou criar um novo, bastando inserir o caminho do arquivo nas configurações do jogo.
 
 ## Como executar
 
