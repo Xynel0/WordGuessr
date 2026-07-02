@@ -63,7 +63,7 @@ harpa
 hiena
 hipopotamo
 horta
-hélice
+helice
 igreja
 iogurte
 jacare
