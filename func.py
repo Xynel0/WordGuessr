@@ -79,7 +79,7 @@ def modo(palavra):
         except ValueError:
             print("opção inválida! deve ser um número. tente novamente.")
 
-def v_input(x, certos, errados):
+def v_input(x, certos, errados, tamanho):
     while True:
         chute = input(x).strip().lower()
         if chute in certos:
@@ -91,11 +91,11 @@ def v_input(x, certos, errados):
                 chute = int(chute)
                 print("tente chutar uma letra!")
             except ValueError:
-                if len(chute) > 1:
-                    print("chute uma letra por vez!")
-                elif chute == '':
+                if chute == '':
                     print("tente chutar uma letra!")
-                elif chute not in "abcdefghijklmnopqrstuvwxyz":
+                elif len(chute) != tamanho and len(chute) > 1:
+                    print("insira somente uma letra por vez ou chute uma palavra com o mesmo tamanho da correta!")
+                elif len(chute) == 1 and chute not in "abcdefghijklmnopqrstuvwxyz":
                     print("as palavras aqui não levam acentos ou caracteres especiais, apenas letras do alfabeto!\ntente novamente")
                 else:
                     return chute
@@ -128,6 +128,22 @@ def add_word(arq_path, sys_word):
                 print("a palavra não pode ser vazia.")
             else:
                 b = val_word(word)
+                if b == True and sys_word == '':
+                    lista = gera_lista(arq_path)
+                    if lista != 0:
+                        if word in lista:
+                            print("a palavra inserida já existe na lista.\ndeseja inserir outra?(s/n)")
+                            b = False
+                            while True:
+                                ans = input().strip().lower()
+                                if ans == 's':
+                                    break
+                                elif ans == 'n':
+                                    return
+                                else:
+                                    print("por favor insira 's' ou 'n'")
+                    else:
+                        print("adicionando nova palavra...")
                 if b == True:
                     arq.write(word+'\n')
                     if sys_word == '':
@@ -141,15 +157,16 @@ def rem_word(arq_path):
         print(i+1, lista[i])
     while True:
         try:
-            n = int(input("insira o número correspondente à palavra a ser deletada:\n").strip())
-            if n < 1 or n > len(lista):
+            n = int(input("insira o número correspondente à palavra a ser deletada:\n(ou insira '0' para limpar o arquivo)\n").strip())
+            if n < 0 or n > len(lista):
                 print("não há palavra com esse número na lista")
             else:
                 with open (arq_path, "w", encoding="utf-8") as arq:
                     pass
-                for i in range(len(lista)):
-                    if i != n-1:
-                        add_word(arq_path, lista[i])
+                if n != 0:
+                    for i in range(len(lista)):
+                        if i != n-1:
+                            add_word(arq_path, lista[i])
                 print('sucesso!')
                 break
         except ValueError:
