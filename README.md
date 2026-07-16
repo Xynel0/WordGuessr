@@ -23,7 +23,7 @@ Ao editar o arquivo, siga as seguintes regras:
 
 Seguindo esse formato, o jogo funcionará corretamente.
 
-Você pode modificar o arquivo original diretamente, ou criar um novo, bastando inserir o caminho do arquivo nas configurações do jogo.
+Você pode modificar o arquivo original diretamente, ou criar um novo, bastando inserir o caminho do arquivo nas configurações do jogo. Ainda é possível adicionar e remover palavras por meio das configurações do jogo.
 
 ## Como executar
 
@@ -32,12 +32,9 @@ Antes de executar o programa, certifique-se de que:
 1. Os três arquivos do repositório estão na mesma pasta.
 2. Os arquivos mantêm seus nomes originais.
 3. O diretório de trabalho utilizado para executar o programa é o mesmo diretório onde os arquivos estão localizados.
+(sugestão: faça download do arquivo '.zip' presente nas releases)
 
-Em seguida, execute:
-
-```bash
-python wordguessr.py
-```
+Em seguida, execute o arquivo de mesmo nome que o jogo.
 
 ### Contribuições
 
